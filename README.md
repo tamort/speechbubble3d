@@ -20,7 +20,7 @@ Speech bubbles added to Third-Person-Controller scene by WaffleAWT
 ## Properties:
 
 - **wrap_size (float)**
-Maximum width of speech bubble in pixels. Text wraps to multiple lines if length exceeds `wrap_size`.[default=300.0]
+Maximum width of speech bubble in pixels. Text wraps to multiple lines if length exceeds `wrap_size`. [default=300.0]
 
 - **text_speed (float)**
 Speed that letters appear. If 0.0, text is shown all at once. [default=0.02]
