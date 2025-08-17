@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://co3qmcfrabvxk"]
+
+[ext_resource type="Texture2D" uid="uid://dbevpxmvwrbag" path="res://addons/speechbubble3d/speech_bubble.png" id="1_wvo1a"]
+[ext_resource type="Texture2D" uid="uid://b2cgfyvf2obye" path="res://addons/speechbubble3d/speech_bubble_r.png" id="2_2wdti"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+visible = false
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(1, 1, 1, 0)
+
+[node name="ResizeContainer" type="VBoxContainer" parent="CanvasModulate"]
+offset_right = 60.0
+offset_bottom = 63.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="EncloseContainer" type="MarginContainer" parent="CanvasModulate/ResizeContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="BubblePicLeft" type="NinePatchRect" parent="CanvasModulate/ResizeContainer/EncloseContainer"]
+layout_mode = 2
+texture = ExtResource("1_wvo1a")
+patch_margin_left = 40
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 40
+
+[node name="BubblePicRight" type="NinePatchRect" parent="CanvasModulate/ResizeContainer/EncloseContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("2_2wdti")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 40
+patch_margin_bottom = 40
+
+[node name="TextMargin" type="MarginContainer" parent="CanvasModulate/ResizeContainer/EncloseContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 30
+
+[node name="Text" type="Label" parent="CanvasModulate/ResizeContainer/EncloseContainer/TextMargin"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 1
+autowrap_mode = 2
+justification_flags = 161
