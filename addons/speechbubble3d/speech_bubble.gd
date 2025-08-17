@@ -67,6 +67,9 @@ func _ready() -> void:
 	transparency_node = get_node("CanvasLayer/CanvasModulate")
 	margin_node = get_node("CanvasLayer/CanvasModulate/ResizeContainer/EncloseContainer/TextMargin")
 	
+	bubble_pic_left.texture = preload("res://addons/speechbubble3d/speech_bubble.png")
+	bubble_pic_right.texture = preload("res://addons/speechbubble3d/speech_bubble_r.png")
+	
 	label_settings = LabelSettings.new()
 	if text_font != null:
 		label_settings.font = text_font

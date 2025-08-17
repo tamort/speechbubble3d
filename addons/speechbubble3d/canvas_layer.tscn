@@ -1,7 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://co3qmcfrabvxk"]
-
-[ext_resource type="Texture2D" uid="uid://dbevpxmvwrbag" path="res://addons/speechbubble3d/speech_bubble.png" id="1_wvo1a"]
-[ext_resource type="Texture2D" uid="uid://b2cgfyvf2obye" path="res://addons/speechbubble3d/speech_bubble_r.png" id="2_2wdti"]
+[gd_scene format=3 uid="uid://co3qmcfrabvxk"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 visible = false
@@ -21,7 +18,6 @@ size_flags_horizontal = 0
 
 [node name="BubblePicLeft" type="NinePatchRect" parent="CanvasModulate/ResizeContainer/EncloseContainer"]
 layout_mode = 2
-texture = ExtResource("1_wvo1a")
 patch_margin_left = 40
 patch_margin_top = 20
 patch_margin_right = 20
@@ -30,7 +26,6 @@ patch_margin_bottom = 40
 [node name="BubblePicRight" type="NinePatchRect" parent="CanvasModulate/ResizeContainer/EncloseContainer"]
 visible = false
 layout_mode = 2
-texture = ExtResource("2_2wdti")
 patch_margin_left = 20
 patch_margin_top = 20
 patch_margin_right = 40
