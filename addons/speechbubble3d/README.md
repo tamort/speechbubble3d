@@ -2,10 +2,6 @@
 # SpeechBubble3D
 Godot addon for custom Node3D that shows a speech bubble.
 
-![Screen Shot](screenshot/screenshot.png)
-
-Speech bubbles added to Third-Person-Controller scene by WaffleAWT
-
 
 ## Installation
 
